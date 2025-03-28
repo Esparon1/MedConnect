@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedConnect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f0f8ff;
+    }
+
+    header {
+      background-color: white;
+      padding: 14px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      width: 100px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+
+    nav ul li a:hover {
+      color: #007bff;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: #f9f9f9;
+      border-radius: 25px;
+      padding: 8px 16px;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      background: none;
+      padding-left: 8px;
+    }
+
+    .hero {
+      background: url('images/healthcare.png') no-repeat ;
+      background-size: cover;
+      background-position: top center; 
+      height: 105vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      
+
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero .cta-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .hero .cta-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .services {
+      background-color: white;
+      padding: 80px 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .service-card {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .service-card i {
+      font-size: 40px;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="Your Logo">
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Rendez Vous</a></li>
+        <li><a href="#">Professionels de Santé</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Rechercher...">
+      <i class="fas fa-search"></i>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1 style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);">Votre santé, notre engagement</h1>
+      <p style="text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);">Un accès simplifié aux soins, une meilleure coordination et un suivi médical sans stress.</p>
+      <a href="#" class="cta-btn">Commencez maintenant</a>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="service-card">
+      <i class="fas fa-ambulance"></i>
+      <h3>Accès Simplifié aux Soins</h3>
+      <p>Prenez vos rendez-vous rapidement et sans complication.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-stethoscope"></i>
+      <h3>Suivi Médical en Temps Réel</h3>
+      <p>Suivez vos rendez-vous et prescriptions facilement.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-vials"></i>
+      <h3>Assistance 24/7</h3>
+      <p>Un support disponible à tout moment.</p>
+    </div>
+  </section>
+
+</body>
+</html>
